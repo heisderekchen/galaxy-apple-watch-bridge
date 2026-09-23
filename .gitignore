@@ -1,5 +1,6 @@
 .DS_Store
 .gradle/
+.kotlin/
 build/
 **/build/
 local.properties
@@ -11,4 +12,3 @@ xcuserdata/
 *.xcuserstate
 secrets.properties
 *.keystore
-
