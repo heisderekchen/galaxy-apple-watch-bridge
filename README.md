@@ -13,7 +13,9 @@ Samsung notification
   -> Apple Watch notification UI
 ```
 
-This repository is an early, runnable prototype. It deliberately uses ntfy as a simple transport while the iPhone and Watch targets are validated. Do not publish sensitive notification contents to a public ntfy topic.
+This repository is an early prototype. It deliberately uses ntfy as a simple transport while the iPhone and Watch targets are validated. Do not publish sensitive notification contents to a public ntfy topic.
+
+The iPhone gateway subscribes to ntfy's `/json` event stream and unwraps the JSON-encoded Android payload before forwarding it to the Watch.
 
 ## Layout
 
@@ -29,4 +31,3 @@ This repository is an early, runnable prototype. It deliberately uses ntfy as a 
 4. Configure the same ntfy topic in the iPhone prototype.
 
 See [docs/architecture.md](docs/architecture.md) and [docs/setup.md](docs/setup.md).
-
