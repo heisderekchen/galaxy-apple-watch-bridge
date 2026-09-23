@@ -1,0 +1,32 @@
+name: GalaxyBridge
+options:
+  bundleIdPrefix: com.galaxybridge
+  deploymentTarget:
+    iOS: "17.0"
+    watchOS: "10.0"
+targets:
+  GalaxyBridge:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+        excludes:
+          - WatchExtensionBridge.swift
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.galaxybridge.iphone
+      INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright 2026"
+      SWIFT_VERSION: 5.0
+    dependencies:
+      - target: GalaxyBridgeWatch
+  GalaxyBridgeWatch:
+    type: watch2-extension
+    platform: watchOS
+    sources:
+      - path: Sources
+        includes:
+          - NotificationEnvelope.swift
+          - WatchExtensionBridge.swift
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.galaxybridge.iphone.watchkitapp.watchkitextension
+      SWIFT_VERSION: 5.0
+

@@ -31,3 +31,5 @@ The iPhone gateway subscribes to ntfy's `/json` event stream and unwraps the JSO
 4. Configure the same ntfy topic in the iPhone prototype.
 
 See [docs/architecture.md](docs/architecture.md) and [docs/setup.md](docs/setup.md).
+
+To generate the Apple project on macOS: install Xcode and XcodeGen, then run `cd ios-watch-prototype && xcodegen generate`.
