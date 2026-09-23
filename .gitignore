@@ -1,0 +1,14 @@
+.DS_Store
+.gradle/
+build/
+**/build/
+local.properties
+*.iml
+.idea/
+Pods/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+secrets.properties
+*.keystore
+
