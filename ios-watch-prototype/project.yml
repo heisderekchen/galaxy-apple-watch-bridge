@@ -19,7 +19,7 @@ targets:
     dependencies:
       - target: GalaxyBridgeWatch
   GalaxyBridgeWatch:
-    type: watch2-extension
+    type: app-extension
     platform: watchOS
     sources:
       - path: Sources
@@ -29,4 +29,3 @@ targets:
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.galaxybridge.iphone.watchkitapp.watchkitextension
       SWIFT_VERSION: 5.0
-

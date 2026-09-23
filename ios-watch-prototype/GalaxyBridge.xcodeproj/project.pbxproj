@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BF363FC32AF613A8FE601EB /* GatewayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164A17AB63C68A58118A4DF7 /* GatewayView.swift */; };
+		2D49DBA399EA0FA063984338 /* GalaxyBridgeWatch.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 689F87CB411E3374C32EFE14 /* GalaxyBridgeWatch.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		76A6773FB09224980B80CD04 /* WatchBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA431A616524D946857B05 /* WatchBridge.swift */; };
+		8006BB8F6BEC6BAB0D5E8366 /* NotificationEnvelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F743E4C162A95125191E147 /* NotificationEnvelope.swift */; };
+		BC6D9E462F40B76B4C53CFBD /* iPhoneGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE46E192B49D087B206BBEB0 /* iPhoneGateway.swift */; };
+		BFFC7C20332DB8930C6980AE /* NotificationEnvelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F743E4C162A95125191E147 /* NotificationEnvelope.swift */; };
+		D74FF29046581AEBE05B85EA /* WatchExtensionBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA8959155F66B6895AFA21A /* WatchExtensionBridge.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AAC6BD4471D059A234A7BAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E20E31F12531AC2800437A30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58B18A2974D02C12DDEBC468;
+			remoteInfo = GalaxyBridgeWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CCB024AFAF5346A7C75D1AF9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2D49DBA399EA0FA063984338 /* GalaxyBridgeWatch.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		164A17AB63C68A58118A4DF7 /* GatewayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayView.swift; sourceTree = "<group>"; };
+		689F87CB411E3374C32EFE14 /* GalaxyBridgeWatch.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GalaxyBridgeWatch.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DCA431A616524D946857B05 /* WatchBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchBridge.swift; sourceTree = "<group>"; };
+		9F743E4C162A95125191E147 /* NotificationEnvelope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationEnvelope.swift; sourceTree = "<group>"; };
+		9FD1538D47A257809BA8A54E /* GalaxyBridge.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GalaxyBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA8959155F66B6895AFA21A /* WatchExtensionBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExtensionBridge.swift; sourceTree = "<group>"; };
+		EE46E192B49D087B206BBEB0 /* iPhoneGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneGateway.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		068E7DA114AE68A3862F245E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FD1538D47A257809BA8A54E /* GalaxyBridge.app */,
+				689F87CB411E3374C32EFE14 /* GalaxyBridgeWatch.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8269E42610176730EFC2E496 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				164A17AB63C68A58118A4DF7 /* GatewayView.swift */,
+				EE46E192B49D087B206BBEB0 /* iPhoneGateway.swift */,
+				9F743E4C162A95125191E147 /* NotificationEnvelope.swift */,
+				7DCA431A616524D946857B05 /* WatchBridge.swift */,
+				BAA8959155F66B6895AFA21A /* WatchExtensionBridge.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9231EDF83D72B4C1959BD0C8 = {
+			isa = PBXGroup;
+			children = (
+				8269E42610176730EFC2E496 /* Sources */,
+				068E7DA114AE68A3862F245E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F39A33954F1E2A5BB499FCB /* GalaxyBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86E14BAACD6A12F233331A48 /* Build configuration list for PBXNativeTarget "GalaxyBridge" */;
+			buildPhases = (
+				727833C3A08AFD64183C569B /* Sources */,
+				CCB024AFAF5346A7C75D1AF9 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BD5F9B38FB7488680F78CE8 /* PBXTargetDependency */,
+			);
+			name = GalaxyBridge;
+			packageProductDependencies = (
+			);
+			productName = GalaxyBridge;
+			productReference = 9FD1538D47A257809BA8A54E /* GalaxyBridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58B18A2974D02C12DDEBC468 /* GalaxyBridgeWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE77B432CF9E8C9B13C8BF06 /* Build configuration list for PBXNativeTarget "GalaxyBridgeWatch" */;
+			buildPhases = (
+				6D976CE3DAD7612FB79219F2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GalaxyBridgeWatch;
+			packageProductDependencies = (
+			);
+			productName = GalaxyBridgeWatch;
+			productReference = 689F87CB411E3374C32EFE14 /* GalaxyBridgeWatch.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E20E31F12531AC2800437A30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = B11AC0566F4F690F9BD870D1 /* Build configuration list for PBXProject "GalaxyBridge" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9231EDF83D72B4C1959BD0C8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 068E7DA114AE68A3862F245E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F39A33954F1E2A5BB499FCB /* GalaxyBridge */,
+				58B18A2974D02C12DDEBC468 /* GalaxyBridgeWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D976CE3DAD7612FB79219F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFFC7C20332DB8930C6980AE /* NotificationEnvelope.swift in Sources */,
+				D74FF29046581AEBE05B85EA /* WatchExtensionBridge.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727833C3A08AFD64183C569B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF363FC32AF613A8FE601EB /* GatewayView.swift in Sources */,
+				8006BB8F6BEC6BAB0D5E8366 /* NotificationEnvelope.swift in Sources */,
+				76A6773FB09224980B80CD04 /* WatchBridge.swift in Sources */,
+				BC6D9E462F40B76B4C53CFBD /* iPhoneGateway.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BD5F9B38FB7488680F78CE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58B18A2974D02C12DDEBC468 /* GalaxyBridgeWatch */;
+			targetProxy = 5AAC6BD4471D059A234A7BAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2F0CC06465AAC3D343053D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2026";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.galaxybridge.iphone;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AE01FEEF1F9CA2810134DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		65E7E49B7A3D9861A6BBF16F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.galaxybridge.iphone.watchkitapp.watchkitextension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		7E3A2432D6B37CE0E1B52F73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.galaxybridge.iphone.watchkitapp.watchkitextension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		809BA713E959B70406B95CE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		BBF29E0D5B17B66C676E82CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2026";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.galaxybridge.iphone;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86E14BAACD6A12F233331A48 /* Build configuration list for PBXNativeTarget "GalaxyBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F0CC06465AAC3D343053D2C /* Debug */,
+				BBF29E0D5B17B66C676E82CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B11AC0566F4F690F9BD870D1 /* Build configuration list for PBXProject "GalaxyBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE01FEEF1F9CA2810134DAB /* Debug */,
+				809BA713E959B70406B95CE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DE77B432CF9E8C9B13C8BF06 /* Build configuration list for PBXNativeTarget "GalaxyBridgeWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65E7E49B7A3D9861A6BBF16F /* Debug */,
+				7E3A2432D6B37CE0E1B52F73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E20E31F12531AC2800437A30 /* Project object */;
+}
