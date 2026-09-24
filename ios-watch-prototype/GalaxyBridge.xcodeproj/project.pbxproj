@@ -11,6 +11,8 @@
 		2D49DBA399EA0FA063984338 /* GalaxyBridgeWatch.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 689F87CB411E3374C32EFE14 /* GalaxyBridgeWatch.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		76A6773FB09224980B80CD04 /* WatchBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCA431A616524D946857B05 /* WatchBridge.swift */; };
 		8006BB8F6BEC6BAB0D5E8366 /* NotificationEnvelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F743E4C162A95125191E147 /* NotificationEnvelope.swift */; };
+		9D3669297C4778CEFD417EA0 /* GatewayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A227558044CEC9AFA1BA76D /* GatewayApp.swift */; };
+		A3519C2140C910149575F9E6 /* WatchExtensionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB171136775C3894468F1BD2 /* WatchExtensionApp.swift */; };
 		BC6D9E462F40B76B4C53CFBD /* iPhoneGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE46E192B49D087B206BBEB0 /* iPhoneGateway.swift */; };
 		BFFC7C20332DB8930C6980AE /* NotificationEnvelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F743E4C162A95125191E147 /* NotificationEnvelope.swift */; };
 		D74FF29046581AEBE05B85EA /* WatchExtensionBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA8959155F66B6895AFA21A /* WatchExtensionBridge.swift */; };
@@ -44,10 +46,12 @@
 		164A17AB63C68A58118A4DF7 /* GatewayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayView.swift; sourceTree = "<group>"; };
 		689F87CB411E3374C32EFE14 /* GalaxyBridgeWatch.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GalaxyBridgeWatch.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DCA431A616524D946857B05 /* WatchBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchBridge.swift; sourceTree = "<group>"; };
+		9A227558044CEC9AFA1BA76D /* GatewayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayApp.swift; sourceTree = "<group>"; };
 		9F743E4C162A95125191E147 /* NotificationEnvelope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationEnvelope.swift; sourceTree = "<group>"; };
 		9FD1538D47A257809BA8A54E /* GalaxyBridge.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GalaxyBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA8959155F66B6895AFA21A /* WatchExtensionBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExtensionBridge.swift; sourceTree = "<group>"; };
 		EE46E192B49D087B206BBEB0 /* iPhoneGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneGateway.swift; sourceTree = "<group>"; };
+		FB171136775C3894468F1BD2 /* WatchExtensionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchExtensionApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -63,10 +67,12 @@
 		8269E42610176730EFC2E496 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9A227558044CEC9AFA1BA76D /* GatewayApp.swift */,
 				164A17AB63C68A58118A4DF7 /* GatewayView.swift */,
 				EE46E192B49D087B206BBEB0 /* iPhoneGateway.swift */,
 				9F743E4C162A95125191E147 /* NotificationEnvelope.swift */,
 				7DCA431A616524D946857B05 /* WatchBridge.swift */,
+				FB171136775C3894468F1BD2 /* WatchExtensionApp.swift */,
 				BAA8959155F66B6895AFA21A /* WatchExtensionBridge.swift */,
 			);
 			path = Sources;
@@ -128,6 +134,12 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					4F39A33954F1E2A5BB499FCB = {
+						ProvisioningStyle = Automatic;
+					};
+					58B18A2974D02C12DDEBC468 = {
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = B11AC0566F4F690F9BD870D1 /* Build configuration list for PBXProject "GalaxyBridge" */;
@@ -156,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFFC7C20332DB8930C6980AE /* NotificationEnvelope.swift in Sources */,
+				A3519C2140C910149575F9E6 /* WatchExtensionApp.swift in Sources */,
 				D74FF29046581AEBE05B85EA /* WatchExtensionBridge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D3669297C4778CEFD417EA0 /* GatewayApp.swift in Sources */,
 				2BF363FC32AF613A8FE601EB /* GatewayView.swift in Sources */,
 				8006BB8F6BEC6BAB0D5E8366 /* NotificationEnvelope.swift in Sources */,
 				76A6773FB09224980B80CD04 /* WatchBridge.swift in Sources */,
@@ -187,6 +201,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2026";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -265,6 +281,8 @@
 		65E7E49B7A3D9861A6BBF16F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -281,6 +299,8 @@
 		7E3A2432D6B37CE0E1B52F73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,6 +375,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2026";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

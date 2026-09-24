@@ -8,5 +8,8 @@ final class WatchExtensionBridge: NSObject, WCSessionDelegate, ObservableObject 
     func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) { receive(userInfo) }
     private func receive(_ object: [String: Any]) { guard let data = try? JSONSerialization.data(withJSONObject: object), let item = try? JSONDecoder().decode(NotificationEnvelope.self, from: data) else { return }; DispatchQueue.main.async { self.latest = item } }
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {}
+    #if os(iOS)
+    func sessionDidBecomeInactive(_ session: WCSession) {}
+    func sessionDidDeactivate(_ session: WCSession) { session.activate() }
+    #endif
 }
-

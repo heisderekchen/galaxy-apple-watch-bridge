@@ -12,9 +12,12 @@ targets:
       - path: Sources
         excludes:
           - WatchExtensionBridge.swift
+          - WatchExtensionApp.swift
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.galaxybridge.iphone
       INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright 2026"
+      GENERATE_INFOPLIST_FILE: YES
+      CODE_SIGN_STYLE: Automatic
       SWIFT_VERSION: 5.0
     dependencies:
       - target: GalaxyBridgeWatch
@@ -26,6 +29,9 @@ targets:
         includes:
           - NotificationEnvelope.swift
           - WatchExtensionBridge.swift
+          - WatchExtensionApp.swift
     settings:
       PRODUCT_BUNDLE_IDENTIFIER: com.galaxybridge.iphone.watchkitapp.watchkitextension
+      GENERATE_INFOPLIST_FILE: YES
+      CODE_SIGN_STYLE: Automatic
       SWIFT_VERSION: 5.0
